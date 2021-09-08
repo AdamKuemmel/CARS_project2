@@ -32,7 +32,7 @@ MODELS--what the user input must look like
         email
         username
         password
-        car_id -----stored reference to an id in the cars table
+        car_id -----stored reference to an id in the cars table can be null since not all users will have a car
         phone#
 
 PUBLIC--handles front end styling and front and JS

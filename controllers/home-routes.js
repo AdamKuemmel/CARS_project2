@@ -10,10 +10,7 @@ router.get('/', async (req, res) => {
         // Maps that data in a way we can read it
         const carCards = carsCardsData.map((cars) => cars.get({plain: true}));
         // Renders this information using handlebars and make sure we are logged in
-        res.render('homepage', {
-            carCards,
-            loggedIn: req.session.LoggedIn,
-        })
+        res.render('homepage', carCards)
 
 
     } catch (err) {
