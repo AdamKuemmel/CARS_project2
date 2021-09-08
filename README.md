@@ -18,6 +18,7 @@ MODELS--what the user input must look like
     car model:
         id
         make
+        model
         year
         color
         milage
