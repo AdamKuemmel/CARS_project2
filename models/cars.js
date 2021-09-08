@@ -17,6 +17,11 @@ Cars.init(
       isAlpha: true,
       allowNull: false,
     },
+    car_model: {
+      type: DataTypes.STRING,
+      len: [2, 15],
+      allowNull: false,
+    },
     car_year: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -25,13 +30,13 @@ Cars.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    car_mileage: {
+    car_milage: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
     car_price: {
-      type: DataTypes.INTEGER,
-      len: [2, 10],
+      type: DataTypes.DECIMAL,
+      len: [10, 10],
       allowNull: false,
     },
     new_used: {
