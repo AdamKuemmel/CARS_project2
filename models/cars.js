@@ -11,45 +11,39 @@ Cars.init(
       autoIncrement: true,
       primaryKey: true,
     },
-    make: {
+    car_make: {
       type: DataTypes.STRING,
-      len: [2, 30],
+      len: [2, 15],
       isAlpha: true,
+      allowNull: false,
     },
-    year: {
-      type: DataTypes.STRING,
-      len: [2, 30],
-      isAlpha: true,
-    },
-    color: {
+    car_year: {
       type: DataTypes.INTEGER,
-      references: {
-        model: "role",
-        key: "id",
-      },
+      allowNull: false,
     },
-    milage: {
-      type: DataTypes.INTEGER,
-      // allowNull: true,
-      // references: {
-      //   model: "employee",
-      //   key: "id",
-      // },
-    },
-    price: {
+    car_color: {
       type: DataTypes.STRING,
-      len: [2, 30],
-      isAlpha: true,
+      allowNull: false,
     },
-    new: {
+    car_milage: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+    },
+    car_price: {
+      type: DataTypes.INTEGER,
+      len: [2, 10],
+      allowNull: false,
+    },
+    new_used: {
       type: DataTypes.BOOLEAN,
-      len: [2, 30],
-      isAlpha: true,
+      allowNull: false,
     },
     user_id: {
-      type: DataTypes.STRING,
-      len: [2, 30],
-      isAlpha: true,
+      type: DataTypes.INTEGER,
+      references: {
+        model: "user",
+        key: "id",
+      },
     },
   },
   {
@@ -61,4 +55,4 @@ Cars.init(
   }
 );
 
-module.exports = Employee;
+module.exports = Cars;
