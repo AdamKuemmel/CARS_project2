@@ -1,0 +1,502 @@
+[
+  {
+    "id": 1,
+    "car_make": "Pontiac",
+    "car_year": 1966,
+    "car_color": "Crimson",
+    "car_mileage": 712667,
+    "car_price": "$80537.62",
+    "new_used": false,
+    "user_id": 1
+  },
+  {
+    "id": 2,
+    "car_make": "BMW",
+    "car_year": 1997,
+    "car_color": "Yellow",
+    "car_mileage": 873604,
+    "car_price": "$46522.23",
+    "new_used": true,
+    "user_id": 2
+  },
+  {
+    "id": 3,
+    "car_make": "Toyota",
+    "car_year": 2006,
+    "car_color": "Purple",
+    "car_mileage": 387884,
+    "car_price": "$77666.20",
+    "new_used": true,
+    "user_id": 3
+  },
+  {
+    "id": 4,
+    "car_make": "Subaru",
+    "car_year": 2005,
+    "car_color": "Crimson",
+    "car_mileage": 596443,
+    "car_price": "$20318.89",
+    "new_used": false,
+    "user_id": 4
+  },
+  {
+    "id": 5,
+    "car_make": "Pontiac",
+    "car_year": 1995,
+    "car_color": "Yellow",
+    "car_mileage": 893341,
+    "car_price": "$51317.10",
+    "new_used": false,
+    "user_id": 5
+  },
+  {
+    "id": 6,
+    "car_make": "Infiniti",
+    "car_year": 1997,
+    "car_color": "Green",
+    "car_mileage": 885021,
+    "car_price": "$79396.54",
+    "new_used": false,
+    "user_id": 6
+  },
+  {
+    "id": 7,
+    "car_make": "Toyota",
+    "car_year": 1998,
+    "car_color": "Orange",
+    "car_mileage": 899286,
+    "car_price": "$47729.02",
+    "new_used": false,
+    "user_id": 7
+  },
+  {
+    "id": 8,
+    "car_make": "Honda",
+    "car_year": 1989,
+    "car_color": "Violet",
+    "car_mileage": 180648,
+    "car_price": "$35328.43",
+    "new_used": true,
+    "user_id": 8
+  },
+  {
+    "id": 9,
+    "car_make": "GMC",
+    "car_year": 1996,
+    "car_color": "Goldenrod",
+    "car_mileage": 551443,
+    "car_price": "$35844.20",
+    "new_used": false,
+    "user_id": 9
+  },
+  {
+    "id": 10,
+    "car_make": "Mazda",
+    "car_year": 2007,
+    "car_color": "Crimson",
+    "car_mileage": 335525,
+    "car_price": "$40922.42",
+    "new_used": true,
+    "user_id": 10
+  },
+  {
+    "id": 11,
+    "car_make": "Mitsubishi",
+    "car_year": 2002,
+    "car_color": "Crimson",
+    "car_mileage": 997930,
+    "car_price": "$75099.07",
+    "new_used": false,
+    "user_id": 11
+  },
+  {
+    "id": 12,
+    "car_make": "Rolls-Royce",
+    "car_year": 2011,
+    "car_color": "Purple",
+    "car_mileage": 229408,
+    "car_price": "$15745.58",
+    "new_used": false,
+    "user_id": 12
+  },
+  {
+    "id": 13,
+    "car_make": "Pontiac",
+    "car_year": 2007,
+    "car_color": "Red",
+    "car_mileage": 402555,
+    "car_price": "$38995.98",
+    "new_used": true,
+    "user_id": 13
+  },
+  {
+    "id": 14,
+    "car_make": "Suzuki",
+    "car_year": 1994,
+    "car_color": "Khaki",
+    "car_mileage": 298925,
+    "car_price": "$79580.09",
+    "new_used": false,
+    "user_id": 14
+  },
+  {
+    "id": 15,
+    "car_make": "Volkswagen",
+    "car_year": 2007,
+    "car_color": "Crimson",
+    "car_mileage": 467267,
+    "car_price": "$29446.74",
+    "new_used": true,
+    "user_id": 15
+  },
+  {
+    "id": 16,
+    "car_make": "Chevrolet",
+    "car_year": 1999,
+    "car_color": "Mauv",
+    "car_mileage": 214478,
+    "car_price": "$67720.30",
+    "new_used": false,
+    "user_id": 16
+  },
+  {
+    "id": 17,
+    "car_make": "Buick",
+    "car_year": 1986,
+    "car_color": "Indigo",
+    "car_mileage": 142789,
+    "car_price": "$39141.45",
+    "new_used": true,
+    "user_id": 17
+  },
+  {
+    "id": 18,
+    "car_make": "Mercedes-Benz",
+    "car_year": 1993,
+    "car_color": "Green",
+    "car_mileage": 133021,
+    "car_price": "$99335.09",
+    "new_used": false,
+    "user_id": 18
+  },
+  {
+    "id": 19,
+    "car_make": "Hyundai",
+    "car_year": 2013,
+    "car_color": "Aquamarine",
+    "car_mileage": 316281,
+    "car_price": "$53938.72",
+    "new_used": false,
+    "user_id": 19
+  },
+  {
+    "id": 20,
+    "car_make": "Lincoln",
+    "car_year": 2005,
+    "car_color": "Fuscia",
+    "car_mileage": 602943,
+    "car_price": "$98258.93",
+    "new_used": false,
+    "user_id": 20
+  },
+  {
+    "id": 21,
+    "car_make": "Mercedes-Benz",
+    "car_year": 2002,
+    "car_color": "Orange",
+    "car_mileage": 937502,
+    "car_price": "$67480.37",
+    "new_used": true,
+    "user_id": 21
+  },
+  {
+    "id": 22,
+    "car_make": "Dodge",
+    "car_year": 2008,
+    "car_color": "Maroon",
+    "car_mileage": 375223,
+    "car_price": "$77336.31",
+    "new_used": false,
+    "user_id": 22
+  },
+  {
+    "id": 23,
+    "car_make": "Pontiac",
+    "car_year": 2007,
+    "car_color": "Crimson",
+    "car_mileage": 706408,
+    "car_price": "$78092.50",
+    "new_used": true,
+    "user_id": 23
+  },
+  {
+    "id": 24,
+    "car_make": "Pontiac",
+    "car_year": 1995,
+    "car_color": "Fuscia",
+    "car_mileage": 59624,
+    "car_price": "$86053.77",
+    "new_used": true,
+    "user_id": 24
+  },
+  {
+    "id": 25,
+    "car_make": "Mercedes-Benz",
+    "car_year": 2012,
+    "car_color": "Pink",
+    "car_mileage": 452689,
+    "car_price": "$86098.48",
+    "new_used": false,
+    "user_id": 25
+  },
+  {
+    "id": 26,
+    "car_make": "Plymouth",
+    "car_year": 1997,
+    "car_color": "Teal",
+    "car_mileage": 584345,
+    "car_price": "$98550.43",
+    "new_used": true,
+    "user_id": 26
+  },
+  {
+    "id": 27,
+    "car_make": "Audi",
+    "car_year": 1996,
+    "car_color": "Crimson",
+    "car_mileage": 345044,
+    "car_price": "$31447.54",
+    "new_used": false,
+    "user_id": 27
+  },
+  {
+    "id": 28,
+    "car_make": "Toyota",
+    "car_year": 2004,
+    "car_color": "Turquoise",
+    "car_mileage": 583569,
+    "car_price": "$11280.49",
+    "new_used": true,
+    "user_id": 28
+  },
+  {
+    "id": 29,
+    "car_make": "Mercedes-Benz",
+    "car_year": 2007,
+    "car_color": "Yellow",
+    "car_mileage": 115377,
+    "car_price": "$94277.00",
+    "new_used": true,
+    "user_id": 29
+  },
+  {
+    "id": 30,
+    "car_make": "GMC",
+    "car_year": 2010,
+    "car_color": "Indigo",
+    "car_mileage": 819709,
+    "car_price": "$62225.74",
+    "new_used": true,
+    "user_id": 30
+  },
+  {
+    "id": 31,
+    "car_make": "Lexus",
+    "car_year": 2011,
+    "car_color": "Maroon",
+    "car_mileage": 523534,
+    "car_price": "$32054.27",
+    "new_used": true,
+    "user_id": 31
+  },
+  {
+    "id": 32,
+    "car_make": "Subaru",
+    "car_year": 1993,
+    "car_color": "Maroon",
+    "car_mileage": 854763,
+    "car_price": "$18292.19",
+    "new_used": false,
+    "user_id": 32
+  },
+  {
+    "id": 33,
+    "car_make": "Suzuki",
+    "car_year": 1995,
+    "car_color": "Goldenrod",
+    "car_mileage": 172378,
+    "car_price": "$8924.12",
+    "new_used": true,
+    "user_id": 33
+  },
+  {
+    "id": 34,
+    "car_make": "Toyota",
+    "car_year": 2008,
+    "car_color": "Green",
+    "car_mileage": 479787,
+    "car_price": "$885.13",
+    "new_used": false,
+    "user_id": 34
+  },
+  {
+    "id": 35,
+    "car_make": "Honda",
+    "car_year": 1992,
+    "car_color": "Turquoise",
+    "car_mileage": 37097,
+    "car_price": "$6798.17",
+    "new_used": false,
+    "user_id": 35
+  },
+  {
+    "id": 36,
+    "car_make": "Volkswagen",
+    "car_year": 2000,
+    "car_color": "Pink",
+    "car_mileage": 451379,
+    "car_price": "$55872.89",
+    "new_used": true,
+    "user_id": 36
+  },
+  {
+    "id": 37,
+    "car_make": "Land Rover",
+    "car_year": 2005,
+    "car_color": "Indigo",
+    "car_mileage": 173325,
+    "car_price": "$52791.16",
+    "new_used": true,
+    "user_id": 37
+  },
+  {
+    "id": 38,
+    "car_make": "Suzuki",
+    "car_year": 2012,
+    "car_color": "Aquamarine",
+    "car_mileage": 633814,
+    "car_price": "$62528.51",
+    "new_used": true,
+    "user_id": 38
+  },
+  {
+    "id": 39,
+    "car_make": "Ford",
+    "car_year": 2005,
+    "car_color": "Fuscia",
+    "car_mileage": 278735,
+    "car_price": "$61395.71",
+    "new_used": false,
+    "user_id": 39
+  },
+  {
+    "id": 40,
+    "car_make": "Dodge",
+    "car_year": 2008,
+    "car_color": "Yellow",
+    "car_mileage": 685775,
+    "car_price": "$1972.71",
+    "new_used": true,
+    "user_id": 40
+  },
+  {
+    "id": 41,
+    "car_make": "Land Rover",
+    "car_year": 2003,
+    "car_color": "Violet",
+    "car_mileage": 907447,
+    "car_price": "$14629.95",
+    "new_used": false,
+    "user_id": 41
+  },
+  {
+    "id": 42,
+    "car_make": "Jeep",
+    "car_year": 1998,
+    "car_color": "Red",
+    "car_mileage": 630807,
+    "car_price": "$35974.29",
+    "new_used": false,
+    "user_id": 42
+  },
+  {
+    "id": 43,
+    "car_make": "Saab",
+    "car_year": 2002,
+    "car_color": "Aquamarine",
+    "car_mileage": 743928,
+    "car_price": "$87794.76",
+    "new_used": true,
+    "user_id": 43
+  },
+  {
+    "id": 44,
+    "car_make": "Dodge",
+    "car_year": 1992,
+    "car_color": "Indigo",
+    "car_mileage": 124269,
+    "car_price": "$64505.46",
+    "new_used": true,
+    "user_id": 44
+  },
+  {
+    "id": 45,
+    "car_make": "Ford",
+    "car_year": 2011,
+    "car_color": "Khaki",
+    "car_mileage": 919693,
+    "car_price": "$17783.70",
+    "new_used": false,
+    "user_id": 45
+  },
+  {
+    "id": 46,
+    "car_make": "Alfa Romeo",
+    "car_year": 1993,
+    "car_color": "Crimson",
+    "car_mileage": 509848,
+    "car_price": "$54777.98",
+    "new_used": false,
+    "user_id": 46
+  },
+  {
+    "id": 47,
+    "car_make": "Mitsubishi",
+    "car_year": 1992,
+    "car_color": "Maroon",
+    "car_mileage": 715899,
+    "car_price": "$74113.38",
+    "new_used": false,
+    "user_id": 47
+  },
+  {
+    "id": 48,
+    "car_make": "Lotus",
+    "car_year": 2012,
+    "car_color": "Indigo",
+    "car_mileage": 238989,
+    "car_price": "$39378.78",
+    "new_used": true,
+    "user_id": 48
+  },
+  {
+    "id": 49,
+    "car_make": "Daewoo",
+    "car_year": 2001,
+    "car_color": "Aquamarine",
+    "car_mileage": 141147,
+    "car_price": "$18602.39",
+    "new_used": false,
+    "user_id": 49
+  },
+  {
+    "id": 50,
+    "car_make": "Toyota",
+    "car_year": 2000,
+    "car_color": "Orange",
+    "car_mileage": 899258,
+    "car_price": "$58475.88",
+    "new_used": true,
+    "user_id": 50
+  }
+]
