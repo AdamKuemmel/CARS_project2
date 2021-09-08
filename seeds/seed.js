@@ -7,8 +7,8 @@ const userSeedData = require("./userSeedData.json");
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
+  await User.bulkCreate(userSeedData, { individualHooks: true });
   await Cars.bulkCreate(carsSeedData);
-  await User.bulkCreate(userSeedData);
 
   process.exit(0);
 };
