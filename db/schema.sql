@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS sideSwipe_db;
+
+CREATE DATABASE sideSwipe_db;
