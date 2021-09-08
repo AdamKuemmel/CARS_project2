@@ -25,7 +25,7 @@ Cars.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    car_milage: {
+    car_mileage: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
