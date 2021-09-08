@@ -1,7 +1,7 @@
-const router = require('./carinfo-route').Router()
+const router = require('express').Router()
 
 const carRoute = require('./carinfo-route')
 
-router.use('/car', carRoute )
+router.use('/cars', carRoute)
 
 module.exports = router;
