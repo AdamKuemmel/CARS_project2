@@ -1,8 +1,16 @@
 const router = require('express').Router();
-
 const { User } = require('../models');
 
+router.get('/', async (req, res)  => {
+    try{ 
+        const dbUser = await User.findAll()
+        const userInfo = dbUser.map((user) => user.get({plain: true}))
 
+    res.status(200).json(userInfo)
+    } catch (err) {
+        res.status(500).json(err)
+    }
+});
 // Creates Our user
 router.post('/', async (req, res) => {
     try {
@@ -24,7 +32,7 @@ router.post('/', async (req, res) => {
         })
     } catch(err) {
         // hopefully this works but if the the username is unqiue to someone already on the platform then the user will be proimtped with an error code will appear. hopefully this works 
-         if(err == JSON(SequelizeUniqueConstraintError)) {
+         if(err == 'SequelizeUniqueConstraintError') {
         res.status(400).json('That username already exists')
     } else {
         console.log(err)
@@ -39,8 +47,9 @@ try {
     // finds user with email or username
     const dbUserData = await User.findOne({
         where: {
-            username: req.body.username,
-            email: req.body.email,
+            [Op.or]:
+            [ {username: req.body.username},
+            {email: req.body.email}]
         }
     });
 
