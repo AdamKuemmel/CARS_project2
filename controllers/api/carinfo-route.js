@@ -62,9 +62,17 @@ router.post('/', async (req, res) => {
 //Update a car
 router.put('/', async (req, res) => {
     try {
-      const updateCar = await Car.update( req.body, {
+      const updateCar = await Cars.update({ 
+          car_model: req.body.car_model,
+            car_year: req.body.car_year,
+            car_color: req.body.car_color,
+            car_milage: req.body.car_milage,
+            car_price: req.body.car_price,
+            new_used: req.body.new_used,
+        }, 
+          {
         where: {
-           used_id: req.body.user_id
+           id: req.body.id
       },
     })
 
