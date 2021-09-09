@@ -2,6 +2,7 @@ const router = require('express').Router();
 const { Cars } = require('../../models')
 const { Op } = require("sequelize")
 
+// Gets all cars
 router.get('/', async (req, res) => {
 
     try {
@@ -13,6 +14,7 @@ router.get('/', async (req, res) => {
     }
 })                                                                   
 
+//Gets cars based on user search
 router.get('/search', async (req, res) => {
     console.log(req.body)
     try {
