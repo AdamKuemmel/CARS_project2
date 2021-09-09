@@ -32,6 +32,7 @@ router.post('/', async (req, res) => {
         // })
 
         res.status(200).json(dbUserCreate)
+        res.render
     } catch(err) {
         // hopefully this works but if the the username is unqiue to someone already on the platform then the user will be proimtped with an error code will appear. hopefully this works 
          if(err == 'SequelizeUniqueConstraintError') {
@@ -42,6 +43,8 @@ router.post('/', async (req, res) => {
     }
 }
 })
+
+router.get("/me", (req,res)=> res.json(req.session));
 
 // Login
 router.post('/login',  async (req, res) => {
@@ -72,11 +75,10 @@ try {
         req.session.loggedIn = true;
         console.log("You've sucessfully logged in!")
         console.log(req.session.loggedIn)
-        req.session.cookie
+        res.status(200).json({ user: dbUserData, message: "You are now logged in!"})
     })
 
-    
-    res.status(200).json({ user: dbUserData, message: "You are now logged in!"})
+    // console.log(req.session)
 
 } catch (err) {
     res.status(500).json(err)    
@@ -87,13 +89,14 @@ try {
 // logs the user out
 router.post('/logout', (req, res) => {
     // if the user is logged in then the user will be loged out
-    console.log(req.session.loggedIn)
+    console.log(req.session)
     if(req.session.loggedIn){
         req.session.destroy((err) => {
             if(err) {
                 res.status(404).end()
-                console.log('You are now logged out!')
             }
+            console.log('You are now logged out!');
+            res.status(200).send("you're logged out!")
         })
     } else {
         res.status(204).end()

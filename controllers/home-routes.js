@@ -11,8 +11,10 @@ router.get('/', async (req, res) => {
         const carCards = carsCardsData.map((cars) => cars.get({plain: true}));
         // Renders this information using handlebars and make sure we are logged in
         // switch to render homepage when frontend is done
-        res.json(carCards)
-        res.render('main', {carCards})
+        // res.json(carCards)
+        console.log(carCards)
+        res.render('homepage', {carCards})
+        
 
     } catch (err) {
         console.log(err)
