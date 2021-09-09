@@ -12,6 +12,7 @@ router.get('/', async (req, res) => {
         // Renders this information using handlebars and make sure we are logged in
         // switch to render homepage when frontend is done
         res.json(carCards)
+        res.render('main', {carCards})
 
     } catch (err) {
         console.log(err)
