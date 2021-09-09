@@ -19,4 +19,6 @@ router.get('/', async (req, res) => {
     }
 });
 
+router.get('/upload', (req,res)=> res.render('uploadPage'))
+
 module.exports = router;
