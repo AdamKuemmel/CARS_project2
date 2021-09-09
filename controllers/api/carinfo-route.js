@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Cars } = require('../../models')
+const { Cars, User } = require('../../models')
 const { Op } = require("sequelize")
 
 // Gets all cars
@@ -36,6 +36,8 @@ router.get('/search', async (req, res) => {
 })
 
 
+
+
 //Create a car
 router.post('/', async (req, res) => {
     try {
@@ -57,6 +59,24 @@ router.post('/', async (req, res) => {
 
 })
 
+//Update a car
+router.put('/', async (req, res) => {
+    try {
+      const updateCar = await Car.update( req.body, {
+        where: {
+           used_id: req.body.user_id
+      },
+    })
+
+    if(!updateCar){
+        res.status(404).json({message: "no user with this id!"})
+    }
+
+    } catch (err) {
+        res.status(400).json(err)
+    }
+
+})
 
 
 //Delete a car
