@@ -1,7 +1,8 @@
 const router = require('express').Router();
-const { Cars } = require('../../models')
+const { Cars, User } = require('../../models')
 const { Op } = require("sequelize")
 
+// Gets all cars
 router.get('/', async (req, res) => {
 
     try {
@@ -13,26 +14,28 @@ router.get('/', async (req, res) => {
     }
 })                                                                   
 
+//Gets cars based on user search
 router.get('/search', async (req, res) => {
+    console.log(req.body)
     try {
         const specialCarsData = await Cars.findAll({
             where: {
-                [Op.or]: [{ id: req.body.id }, 
-                    { make: req.body.car_make }, 
-                    { model: req.body.car_model },
-                    { year: req.body.car_year}],
+                [Op.and]: req.body
             }})
 
-         if(!specialCarsData) {
+         if(!specialCarsData || specialCarsData.length === 0) {
              res.status(400).json({message: 'That car does not exist!'})
              return
          } 
          
          res.status(200).json(specialCarsData)
     } catch (err) {
+        console.log(err)
         res.status(500).json(err)
     }
 })
+
+
 
 
 //Create a car
@@ -41,8 +44,8 @@ router.post('/', async (req, res) => {
         const carCreateData = await Cars.create({
             car_make: req.body.car_make,
             car_model: req.body.car_model,
-            car_year: req.body.car_model,
-            car_color: req.body.car_model,
+            car_year: req.body.car_year,
+            car_color: req.body.car_color,
             car_milage: req.body.car_milage,
             car_price: req.body.car_price,
             new_used: req.body.new_used,
@@ -56,6 +59,24 @@ router.post('/', async (req, res) => {
 
 })
 
+//Update a car
+router.put('/', async (req, res) => {
+    try {
+      const updateCar = await Car.update( req.body, {
+        where: {
+           used_id: req.body.user_id
+      },
+    })
+
+    if(!updateCar){
+        res.status(404).json({message: "no user with this id!"})
+    }
+
+    } catch (err) {
+        res.status(400).json(err)
+    }
+
+})
 
 
 //Delete a car
@@ -64,7 +85,7 @@ router.delete('/:id', async (req, res) => {
 try {
     const carData = await Cars.destroy({
         where: {
-            id: req.paramas.id,
+            id: req.params.id,
         }
     })
 

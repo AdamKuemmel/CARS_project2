@@ -101,6 +101,56 @@ html detail for a singular car card---multiple cards displayed on one page
     LOGIN/LOGOUT handlebar page
         2 cards to collect login data or signup data
 
+VIEWS--HANDLEBARS
+MAIN
+header and foot boiler plate
+bootstrap link
+font link
+JS and CSS style links
+nav
+footer
+
+    SIGNUP/SIGNIN
+    2 cards
+        LOGIN
+            username
+            password
+        SIGNUP
+            email
+            username
+            password
+            first name
+            last name
+            PHone numnber
+
+
+    USER DAHSBOARD
+        view all
+        my cars
+        post cars
+        liked cars
+
+    DETAIL SINGLE CAR
+        img
+        make
+        model
+        year
+        color
+        milage
+        price
+        new/used
+    POST PAGE
+         img
+        make
+        model
+        year
+        color
+        milage
+        price
+        new/used
+    MY CARS
+        single cards similar to view all cars, only to specific user
+
 #$*#*$%##_$ICEBOX#$%&$#_$%
 filter options
 
