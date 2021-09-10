@@ -12,8 +12,7 @@ router.get('/', async (req, res) => {
         // Renders this information using handlebars and make sure we are logged in
         // switch to render homepage when frontend is done
         // res.json(carCards)
-        console.log(carCards)
-        res.render('homepage', {carCards})
+        res.render('homepage', {carCards, loggedIn: req.session.loggedIn,})
         
 
     } catch (err) {
@@ -23,5 +22,7 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/upload', (req,res)=> res.render('uploadPage'))
+
+
 
 module.exports = router;

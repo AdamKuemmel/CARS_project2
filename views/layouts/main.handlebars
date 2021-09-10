@@ -12,10 +12,10 @@
     </header>
     <nav>
       <a href="/"> Home</a>
-      {{#if Loggedin}}
+      {{#if loggedIn}}
         <button id="logout" class="btn-no-style"> Logout</button>
       {{else}}
-        <a href="/login">Login</a>
+        <a href="/users/login">Login</a>
       {{/if}}
     </nav>
     <main>
@@ -24,7 +24,7 @@
         {{{body}}}
       </div> 
     </main>
-    {{#if LoggedIn}}
+    {{#if loggedIn}}
       <script src="/js/logout.js"></script>
     {{/if}}
   </body>

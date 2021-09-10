@@ -16,7 +16,6 @@ router.get('/', async (req, res) => {
 
 //Gets cars based on user search
 router.get('/search', async (req, res) => {
-    console.log(req.body)
     try {
         const specialCarsData = await Cars.findAll({
             where: {
@@ -63,7 +62,7 @@ router.post('/', async (req, res) => {
 router.put('/', async (req, res) => {
     try {
       const updateCar = await Cars.update({ 
-          car_model: req.body.car_model,
+            car_model: req.body.car_model,
             car_year: req.body.car_year,
             car_color: req.body.car_color,
             car_milage: req.body.car_milage,

@@ -44,9 +44,16 @@ router.post('/', async (req, res) => {
 }
 })
 
-router.get("/me", (req,res)=> res.json(req.session));
+//Login get
+router.get('/login', (req, res) => {
+    if(req.session.loggedIn){
+        res.redirect('/');
+        return;
+    } 
+    res.render('login')
+} )
 
-// Login
+// Login Post
 router.post('/login',  async (req, res) => {
 try {
     // finds user with email or username
