@@ -5,3 +5,19 @@
   padding: 10px;
   border: 5px;
 }
+
+
+.bg-primary {
+  background-color: black!important;
+}
+
+
+.bg-primary {
+  background-color: black!important;
+}
+
+
+* {
+  font-size: 30px!important;
+  background:red;
+}
