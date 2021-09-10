@@ -20,7 +20,7 @@ router.get('/myCars', async (req, res) => {
     const mycarCards = myCarData.map((cars) => cars.get({plain: true}));
 
     console.log(mycarCards)
-    res.end();
+    res.render('myCars', {mycarCards} )
 })
 
 module.exports = router; 
