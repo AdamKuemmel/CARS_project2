@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const { Cars, User } = require('../models')
+const { Cars, } = require('../models')
 
 // Get all Cars
 router.get('/', async (req, res) => {
@@ -21,6 +21,7 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/dashboard', (req, res) => {
+
 
 
     res.render('dashboard')

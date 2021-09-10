@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const { Cars, User} = require('../models')
+const { Cars } = require('../models')
 
 // Route to reach dashboard
 router.get('/', (req, res) => {
@@ -9,7 +9,7 @@ router.get('/', (req, res) => {
     res.render('dashboard')
 })
 
-// 
+// Renders logged in users cars
 router.get('/myCars', async (req, res) => {
 
     const myCarData = await Cars.findAll({
@@ -21,6 +21,11 @@ router.get('/myCars', async (req, res) => {
 
     console.log(mycarCards)
     res.render('myCars', {mycarCards} )
+})
+
+router.get('/postcar', async (req, res) => {
+
+    res.render('postCar')
 })
 
 module.exports = router; 
