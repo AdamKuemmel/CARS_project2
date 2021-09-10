@@ -26,6 +26,7 @@ const sess = {
 };
 
 app.use(session(sess));
+app.use(express.static("public"))
 
 //create engine with helpers
 // const hbs = exphbs.create({ helpers });

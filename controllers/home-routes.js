@@ -1,6 +1,5 @@
 const router = require('express').Router()
-const { Cars } = require('../models')
-
+const { Cars, User } = require('../models')
 
 // Get all Cars
 router.get('/', async (req, res) => {
@@ -20,6 +19,12 @@ router.get('/', async (req, res) => {
         res.status(500).json(err)
     }
 });
+
+router.get('/dashboard', (req, res) => {
+
+
+    res.render('dashboard')
+})
 
 router.get('/upload', (req,res)=> res.render('uploadPage'))
 

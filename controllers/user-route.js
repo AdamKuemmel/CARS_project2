@@ -14,25 +14,26 @@ router.get('/', async (req, res)  => {
 // Creates Our user
 router.post('/', async (req, res) => {
     try {
+        
         // Creates User with all the require information
         const dbUserCreate = await User.create({
-            first_name: req.body.first_name,
-            last_name: req.body.last_name,
+            first_name: req.body.firstName,
+            last_name: req.body.lastName,
             email: req.body.email,
             username: req.body.username,
             password: req.body.password,
-            phone_number: req.body.phone_number
+            phone_number: req.body.phoneNumber
         })
 
         // Logs the user in
-        // req.session.save(() => {
-        //     req.session.loggedIn = true;
+        req.session.save(() => {
+            req.session.loggedIn = true;
 
-        //     
-        // })
+            res.status(200).json(dbUserCreate)
+        
+        })
 
-        res.status(200).json(dbUserCreate)
-        res.render
+        
     } catch(err) {
         // hopefully this works but if the the username is unqiue to someone already on the platform then the user will be proimtped with an error code will appear. hopefully this works 
          if(err == 'SequelizeUniqueConstraintError') {
@@ -77,12 +78,16 @@ try {
         res.status(400).json({message: 'Incorrect email or password. Please try again!'})
     }
 
+    const userObject = {username: dbUserData.username, id: dbUserData.id, first_name: dbUserData.first_name}
+    console.log(userObject)
     // if validpassword returns true then the user is logged in
     req.session.save(() => {
         req.session.loggedIn = true;
+        req.session.username = userObject
+        console.log(req.session.username)
         console.log("You've sucessfully logged in!")
         console.log(req.session.loggedIn)
-        res.status(200).json({ user: dbUserData, message: "You are now logged in!"})
+        res.status(200).json({message: "You are now logged in!"})
     })
 
     // console.log(req.session)
