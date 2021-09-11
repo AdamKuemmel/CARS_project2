@@ -2,12 +2,7 @@ const router = require('express').Router()
 const { Cars } = require('../models')
 
 // Route to reach dashboard
-router.get('/', (req, res) => {
 
-    
-// Renders dashboard handlebars page
-    res.render('dashboard')
-})
 
 // Renders logged in users cars
 router.get('/myCars', async (req, res) => {
@@ -20,7 +15,7 @@ router.get('/myCars', async (req, res) => {
     const mycarCards = myCarData.map((cars) => cars.get({plain: true}));
 
     console.log(mycarCards)
-    res.render('myCars', {mycarCards} )
+    res.render('myCars', {mycarCards, loggedIn: req.session.loggedIn} )
 })
 
 router.get('/postcar', async (req, res) => {

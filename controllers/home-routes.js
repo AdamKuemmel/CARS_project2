@@ -24,9 +24,9 @@ router.get('/dashboard', (req, res) => {
 
     if(!req.session.loggedIn){
         res.render('login')
-    }
-
-    res.render('dashboard')
+    } else { res.render('dashboard', { loggedIn: req.session.loggedIn})}
+// Renders dashboard handlebars page
+    
 })
 
 router.get('/upload', (req,res)=> res.render('uploadPage'))

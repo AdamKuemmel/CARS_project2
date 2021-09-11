@@ -51,7 +51,7 @@ router.get('/login', (req, res) => {
         res.redirect('/');
         return;
     } 
-    res.render('login')
+    res.render('login', )
 } )
 
 // Login Post
@@ -84,9 +84,7 @@ try {
     req.session.save(() => {
         req.session.loggedIn = true;
         req.session.username = userObject
-        console.log(req.session.username)
         console.log("You've sucessfully logged in!")
-        console.log(req.session.loggedIn)
         res.status(200).json({message: "You are now logged in!"})
     })
 

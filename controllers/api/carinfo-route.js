@@ -12,7 +12,25 @@ router.get('/', async (req, res) => {
     } catch (err) {
         res.status(500).json(err)
     }
-})                                                                   
+})
+
+router.get('/:id', async (req, res) => {
+    console.log(req.session.LoggedIn)
+    // if(!req.session.LoggedIn){
+    //     res.render('login')
+    // } else {
+        try {
+            const singleCarQuery = await Cars.findByPk(req.params.id)
+            
+            const singleCar = singleCarQuery.get({plain: true});
+            console.log(singleCar)
+            res.render('single-car', {singleCar, LoggedIn: req.session.LoggedIn})
+
+        } catch (err) {
+            res.status(500).json(err)
+        }
+    // }
+})
 
 //Gets cars based on user search
 router.get('/search', async (req, res) => {

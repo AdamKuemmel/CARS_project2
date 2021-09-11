@@ -1,0 +1,13 @@
+
+<div class="card" style="width: 18rem;">
+    {{!-- <img src="" class="card-img-top" alt=".IMG GOES HERE.." /> --}}
+    <div class="card-body">
+        <p class="card-text">ID:{{id}}</p>
+        <p class="card-text">Make:{{car_make}}</p>
+        <p class="card-text">Model:{{car_model}}</p>
+        <p class="card-text">Year:{{car_year}}</p>
+        <a href="/api/cars/{{id}}" id="view_car" class="cloudinary-button">View Car</a>
+        <button id="updatebutton" class="cloudinary-button">Update your Car</button>
+        <button id="deleteButton" class="cloudinary-button">Delete this Car</button>
+    </div>
+</div>
