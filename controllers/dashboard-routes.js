@@ -25,7 +25,7 @@ router.get('/myCars', async (req, res) => {
 
 router.get('/postcar', async (req, res) => {
 
-    res.render('postCar')
+
 })
 
 module.exports = router; 
