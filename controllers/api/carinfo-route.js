@@ -41,16 +41,16 @@ router.get('/search', async (req, res) => {
 router.post('/', async (req, res) => {
     try {
         const carCreateData = await Cars.create({
-            car_make: req.body.car_make,
-            car_model: req.body.car_model,
-            car_year: req.body.car_year,
-            car_color: req.body.car_color,
-            car_milage: req.body.car_milage,
-            car_price: req.body.car_price,
-            new_used: req.body.new_used,
-            user_id: req.body.user_id
+            car_make: req.body.carMake,
+            car_model: req.body.carModel,
+            car_year: req.body.carYear,
+            car_color: req.body.carColor,
+            car_milage: req.body.carMileage,
+            car_price: req.body.carPrice,
+            new_used: req.body.carNew,
+            user_id: req.session.username.id
         })
-
+        console.log("Sucessfully created a car!")
         res.status(200).json(carCreateData)
     } catch (err) {
         res.status(400).json(err)
