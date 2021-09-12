@@ -80,12 +80,13 @@ router.post('/', async (req, res) => {
 router.put('/', async (req, res) => {
     try {
       const updateCar = await Cars.update({ 
-            car_model: req.body.car_model,
-            car_year: req.body.car_year,
-            car_color: req.body.car_color,
-            car_milage: req.body.car_milage,
-            car_price: req.body.car_price,
-            new_used: req.body.new_used,
+            car_model: req.body.carModel,
+            car_make: req.body.carMake,
+            car_year: req.body.carYear,
+            car_color: req.body.carColor,
+            car_milage: req.body.carMileage,
+            car_price: req.body.carPrice,
+            new_used: req.body.carNew,
         }, 
           {
         where: {
@@ -119,7 +120,8 @@ try {
         return
     }
 
-    res.status(200).json(carData)
+    res.render('dashboard')
+    console.log('sucessfully deleted car!')    
 } catch (err) {
     res.status(500).json(err)
 }

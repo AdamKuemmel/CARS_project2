@@ -10,5 +10,27 @@
     {{else}}
     <p>USED</p>
     {{/if}}
+    <button id="deletebutton" class="cloudinary-button">Delete this Car</button>
+    <button id="updatebutton" class="cloudinary-button">Update your Car</button>
   </div>
+
+
+  <script>
+
+    const deleteCar = async () => {
+
+      console.log({{singelCar.id}})
+
+const response = await fetch("/api/cars/" + {{singleCar.id}}, {
+          method: "DELETE"
+        })
+
+        if (response.ok) {
+          document.location.replace("/dashboard")
+        }
+
+      }
+      
+      document.querySelector("#deletebutton").addEventListener("click", deleteCar);
+  </script>
 
