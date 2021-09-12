@@ -78,7 +78,7 @@ try {
         res.status(400).json({message: 'Incorrect email or password. Please try again!'})
     }
 
-    const userObject = {username: dbUserData.username, id: dbUserData.id, first_name: dbUserData.first_name}
+    const userObject = {username: dbUserData.username, id: dbUserData.id, first_name: dbUserData.first_name, last_name: dbUserData.last_name, email: dbUserData.email, phone_number: dbUserData.phone_number}
     console.log(userObject)
     // if validpassword returns true then the user is logged in
     req.session.save(() => {

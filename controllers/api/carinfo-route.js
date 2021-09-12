@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Cars } = require('../../models')
+const { Cars, User } = require('../../models')
 const { Op } = require("sequelize")
 
 // Gets all cars
@@ -15,16 +15,19 @@ router.get('/', async (req, res) => {
 })
 
 router.get('/:id', async (req, res) => {
-    console.log(req.session.LoggedIn)
-    // if(!req.session.LoggedIn){
-    //     res.render('login')
-    // } else {
+
         try {
             const singleCarQuery = await Cars.findByPk(req.params.id)
+            const user_idQuery = await User.findByPk(singleCarQuery.user_id)
+
+            
             
             const singleCar = singleCarQuery.get({plain: true});
-            console.log(singleCar)
-            res.render('single-car', {singleCar, LoggedIn: req.session.LoggedIn})
+            const user_id = user_idQuery.get({plain: true});
+
+            console.log(user_id)
+           
+            res.render('single-car', {singleCar, user_id, LoggedIn: req.session.LoggedIn})
 
         } catch (err) {
             res.status(500).json(err)
