@@ -1,9 +1,44 @@
-<p class="card-text">ID:{{id}}</p>
-    <p class="card-text">Make:{{car_make}}</p>
-    <p class="card-text">Model:{{car_model}}</p>
-    <p class="card-text">Year:{{car_year}}</p>
-    <p class="card-text">Color:{{car_color}}</p>
-    <p class="card-text">Milage:{{car_milage}}</p>
-    <p class="card-text">${{car_price}}</p>
+<p class="card-text">ID:{{singleCar.id}}</p>
+    <p class="card-text">Make:{{singleCar.car_make}}</p>
+    <p class="card-text">Model:{{singleCar.car_model}}</p>
+    <p class="card-text">Year:{{singleCar.car_year}}</p>
+    <p class="card-text">Color:{{singleCar.car_color}}</p>
+    <p class="card-text">Milage:{{singleCar.car_milage}}</p>
+    <p class="card-text">${{singleCar.car_price}}</p>
+    {{#if new_used}}
+    <p class="card=text">NEW</p>
+    {{else}}
+    <p>USED</p>
+    {{/if}}
+
+    <h3>Seller Contact Information:</h3>
+    <p class="card-text"> Seller Name: {{user_id.first_name}} {{user_id.last_name}} </p>
+    <P class="card-text"> Username: {{user_id.username}}</p>
+    <p class="card-text"> Email: {{user_id.email}} </p>
+    <p class="card-text"> Phone Number: {{user_id.phone_number}}</p>
+
+    <button id="deletebutton" class="cloudinary-button">Delete this Car</button>
+    <a href="/api/cars/update/{{singleCar.id}}" id="updatebutton" class="cloudinary-button">Update your Car</a>
   </div>
+
+
+  <script>
+
+  const deleteCar = async () => {
+
+      console.log({{singelCar.id}})
+
+const response = await fetch("/api/cars/" + {{singleCar.id}}, {
+          method: "DELETE"
+        })
+
+        if (response.ok) {
+          document.location.replace("/dashboard")
+        }
+
+      }
+       
+  document.querySelector('#')
+      document.querySelector("#deletebutton").addEventListener("click", deleteCar);
+  </script>
 
