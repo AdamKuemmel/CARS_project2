@@ -11,13 +11,13 @@
     <p>USED</p>
     {{/if}}
     <button id="deletebutton" class="cloudinary-button">Delete this Car</button>
-    <button id="updatebutton" class="cloudinary-button">Update your Car</button>
+    <a href="/api/cars/update/{{singleCar.id}}" id="updatebutton" class="cloudinary-button">Update your Car</a>
   </div>
 
 
   <script>
 
-    const deleteCar = async () => {
+  const deleteCar = async () => {
 
       console.log({{singelCar.id}})
 
@@ -30,7 +30,8 @@ const response = await fetch("/api/cars/" + {{singleCar.id}}, {
         }
 
       }
-      
+       
+  document.querySelector('#')
       document.querySelector("#deletebutton").addEventListener("click", deleteCar);
   </script>
 

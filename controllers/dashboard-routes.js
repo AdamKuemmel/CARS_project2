@@ -1,8 +1,6 @@
 const router = require('express').Router()
 const { Cars } = require('../models')
 
-// Route to reach dashboard
-
 
 // Renders logged in users cars
 router.get('/myCars', async (req, res) => {
@@ -20,7 +18,7 @@ router.get('/myCars', async (req, res) => {
 
 router.get('/postcar', async (req, res) => {
 
-
+    res.render('postCar', {loggedIn: req.session.loggedIn})
 })
 
 module.exports = router; 

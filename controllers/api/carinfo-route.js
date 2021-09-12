@@ -76,8 +76,24 @@ router.post('/', async (req, res) => {
 
 })
 
+//get update car
+router.get('/update/:id', async (req, res) => {
+    try {
+        const updateCarQuery = await Cars.findByPk(req.params.id)
+        const updatedCar = updateCarQuery.get({plain: true});
+       
+
+        res.render('updateCar', {updatedCar, LoggedIn: req.session.loggedIn})
+    } catch (err) {
+        console.log(err)
+        res.status(400)
+    }
+
+})
+
 //Update a car
 router.put('/', async (req, res) => {
+    console.log("request was made")
     try {
       const updateCar = await Cars.update({ 
             car_model: req.body.carModel,
@@ -95,8 +111,11 @@ router.put('/', async (req, res) => {
     })
 
     if(!updateCar){
-        res.status(404).json({message: "no user with this id!"})
+        res.status(404).json({message: "no Car with this id!"})
     }
+
+    console.log(updateCar)
+    res.status(200).json(updateCar)
 
     } catch (err) {
         res.status(400).json(err)
