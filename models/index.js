@@ -9,5 +9,3 @@ Cars.belongsTo(User, {
   foreignKey: "user_id",
 });
 module.exports = { Cars, User };
-
-let In;
