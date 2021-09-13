@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 
-app.use(express.static(__dirname + "public"))
+app.use(express.static("public"))
 
 
 const sess = {
@@ -49,4 +49,3 @@ sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log("Now listening"));
 });
 
-let se;
