@@ -1,11 +1,11 @@
-<div class="card" style="width: 14rem;">
+<div class="crd" id="card" style="width: 14rem;">
   {{! <img src="" class="card-img-top" alt=".IMG GOES HERE.." /> }}
   <div class="card-body">
     <img width="90%" src={{img_url}} alt="car pic" />
-    <p class="card-text">ID:{{id}}</p>
-    <p class="card-text">Make:{{car_make}}</p>
-    <p class="card-text">Model:{{car_model}}</p>
-    <p class="card-text">Year:{{car_year}}</p>
+
+    <p class="card-text">Make: {{car_make}}</p>
+    <p class="card-text">Model: {{car_model}}</p>
+    <p class="card-text">Year: {{car_year}}</p>
     <a href="/api/cars/{{id}}" id="view_car" class="cloudinary-button">View Car</a>
   </div>
 </div>
