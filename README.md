@@ -1,4 +1,3 @@
-
 ReadME
 
 # Title of Project
@@ -17,7 +16,7 @@ Buying and selling has never been easier for individuals not wanting to involve 
 
  
  
- ## Screenshot of Finished Project
+## Screenshot of Finished Project
 “Add at a later time”
 
 

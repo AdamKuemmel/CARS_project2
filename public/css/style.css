@@ -50,7 +50,7 @@ nav {
 }
 .card-body {
   padding-left: 10px;
-  background-color: red;
+  background-color:black;
 }
 .footer {
   background-color: #586978;
@@ -84,7 +84,7 @@ nav {
   justify-content: space-evenly;
   text-align: center;
   background-color: whitesmoke;
-  color: red;
+  color:white;
   height: 50vh;
 }
 .form-group {
