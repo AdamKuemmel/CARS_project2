@@ -41,8 +41,13 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+<<<<<<< HEAD
   background-color: black;
   color: #FFB473;
+=======
+  color: whitesmoke;
+  padding-bottom: 60px;
+>>>>>>> main
 }
 
 .card {
@@ -69,7 +74,7 @@ nav {
   display: flex;
   position: fixed;
   width: 100%;
-
+  bottom: 0px;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;

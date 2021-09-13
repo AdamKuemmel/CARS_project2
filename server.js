@@ -13,6 +13,10 @@ const routes = require('./controllers');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+
+app.use(express.static("public"))
+
+
 const sess = {
   secret: 'Super secret secret',
   cookie: {
@@ -27,7 +31,6 @@ const sess = {
 };
 
 app.use(session(sess));
-app.use(express.static("public"))
 
 //create engine with helpers
 // const hbs = exphbs.create({ helpers });
