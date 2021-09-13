@@ -12,6 +12,20 @@
       id="updatebutton"
       class="cloudinary-button"
     >Update your Car</a>
+<<<<<<< HEAD
+=======
+    <script>
+
+      const deleteCar{{id}}
+      = async () => { 
+     const response = await
+      fetch("/api/cars/" +
+      {{id}}, { method: "DELETE" }) if (response.ok) {
+      document.location.replace("/dashboard/myCars") } }
+      document.querySelector(`#deletebutton{{id}}`).addEventListener("click",
+      deleteCar{{id}});
+    </script>
+>>>>>>> bbd98e90c6279eb26f6bf235d8b816596eb8096a
 
   </div>
 </div>
