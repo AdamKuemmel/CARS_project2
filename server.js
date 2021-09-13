@@ -1,6 +1,6 @@
 const express = require("express");
 const sequelize = require("./config/connection");
-const models = require("./models/index");
+const models = require("./models/Index");
 const path = require("path")
 const session = require('express-session');
 const exphbs = require('express-handlebars');
@@ -14,7 +14,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 
-app.use(express.static("public"))
+app.use(express.static(__dirname + "public"))
 
 
 const sess = {
