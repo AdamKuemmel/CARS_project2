@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const { Cars } = require('../models')
+const { Cars } = require('../models/index')
 
 
 // Renders logged in users cars

@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const { Cars, User } = require("../../models");
+const { Cars, User } = require("../../models/index");
 const { Op } = require("sequelize");
 
 // Gets all cars
@@ -16,7 +16,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   console.log(req.session);
   if (!req.session.loggedIn) {
-    res.render("render");
+    res.render("login");
   } else {
     try {
       const singleCarQuery = await Cars.findByPk(req.params.id);
@@ -31,7 +31,7 @@ router.get("/:id", async (req, res) => {
         loggedIn: req.session.loggedIn,
       });
     } catch (err) {
-      res.status(500).json(err);
+      res.status(400).json(err);
     }
     // }
   }
