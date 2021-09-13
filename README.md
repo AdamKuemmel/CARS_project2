@@ -1,157 +1,77 @@
-# CARS_project2
+# sideSwipe
 
-USER EXPERIENCE
-user will be able to sign up and login
-check status of cars
-post cars
-delete cars
-update car info
+group project 2
 
-REQUIRED PAGES
-home/login page
-view your posts
-view all posts
-Form page
+## Description of Project
 
-MODELS--what the user input must look like
+This second Group Project was to build both the front and back-end to a website of our choosing. After group deliberations, we decided on a website that we named Side Swipe that simplifies and allows individuals to buy and sell their cars online.
+The owner can upload information as well as photos of their car and post it to our site. Those looking for a car can conversely search for cars to purchase with their desired traits such as price point, make and model of car and color.
+Upon arrival at our site, the user is directed to login on the homepage. They can then navigate to their personal page with persisting data from their searches, or they can continue to scroll through the cards/listings other sellers have posted.
+In order to post a car for sale, an individual utilizes an API by the name of Cloudinary, which is a built-in feature to our front-end design. This API takes the images and information posted by the user and formats it uniformly into our website, making it simple for the average person to participate in the buying and selling process.
+Contact information is posted alongside the vehicle so individuals can contact one another regarding their cars.
+Buying and selling has never been easier for individuals not wanting to involve a third-party.
 
-    car model:
-        id
-        make
-        model
-        year
-        color
-        milage
-        price
-        images
-        USED?NEW
+## Dependencies
 
-    user model:
-        id
-        first
-        last
-        email
-        username
-        password
-        car_id -----stored reference to an id in the cars table can be null since not all users will have a car
-        phone#
+```
+npm run start
+```
 
-PUBLIC--handles front end styling and front and JS
+```
+npm run seed
+```
 
-    login.js:
-        login form handler with event listeners and api fetch(async functions)
-        signup form handler with event listeners post request
-        event listener on corresponding button to direct user to corresponding function
+## Deployable links
 
-    logout.js
-        logout async function returning user to the home page
-        event listnener on logout button to direct JS to logout function
+hosted on heroku!
 
-CONTROLLERS---responsible for handling the routes to the API(POST, GET )
+https://thawing-mesa-73583.herokuapp.com/
 
-    API FOLDER---this is where we will store the routes to the api
-        user routes
-            create a new user
-            Login
-            Logout
-        car routes
-            post new car
-            Edit a car
-            Delete a car
-            view car
+## Screenshot of Finished Project
 
+“Add at a later time”
 
-    homepage-routes
-        GET all cars and display as cards
-        LOGIN route
-            redirects user to the login route declared in the API folder
+## Technology Used
 
-    index
-        supplies middleware to make requiring routes easier
+- Node.js
+- Java Script
+- HTML
+- CSS
+- Handlebars
+- Couldinary
+- MySQL
+- Sequelize ORM
+- Heroku
 
-UTILS DIRECTORY
-middleware for easy use of things like date, time, UUID, password hashing
+## Resources Used
 
-VIEWS FOLDER
-LAYOUTS
-one main.handlebars folder including head HTML(stylesheets, fonts, JS links, project title)
-includes anyhting that will always be required in HTML file and we insert other handlebars files into this main layout
-PARTIALS
-html detail for a singular car card---multiple cards displayed on one page
+- [Google](https://google.com)
+- [Moment.js](https://momentjs.com)
+- [w3schools](https://w3schools.com)
+- [MDN Web Docs](https://developer.mozilla.org)
 
-    NO LOG HOMEPAGE
-        all cars in Car table displayed
-        when user clicks on view car will prompt them to login or signup
-        if logged in brings them to singCar.handlebars
+## Contact Information
 
-    YES LOG HOMEPAGE
-          view all cars(homepage)
-          view my cars(car_id reference)
-          view liked cars
+Brock Atwood
 
+https://github.com/BrockAtwood
 
+https://www.linkedin.com/in/brock-atwood-55135210/
 
-    SingleCar MAIN DISPLAY
-        include more detaield description of car
-        multiple pictures
-        will display all details
-        Bid option?
-        message owner?
+Justin Phillips
 
-    LOGIN/LOGOUT handlebar page
-        2 cards to collect login data or signup data
+https://github.com/Jukphillips
 
-VIEWS--HANDLEBARS
-MAIN
-header and foot boiler plate
-bootstrap link
-font link
-JS and CSS style links
-nav
-footer
+https://www.linkedin.com/in/justin-phillips-965a39218/
 
-    SIGNUP/SIGNIN
-    2 cards
-        LOGIN
-            username
-            password
-        SIGNUP
-            email
-            username
-            password
-            first name
-            last name
-            PHone numnber
+Stephanie Johansson
 
+7steph7@gmail.com
 
-    USER DAHSBOARD
-        view all
-        my cars
-        post cars
-        liked cars
+https://www.linkedin.com/in/stephanie-johansson-934096213/
 
-    DETAIL SINGLE CAR
-        img
-        make
-        model
-        year
-        color
-        milage
-        price
-        new/used
-    POST PAGE
-         img
-        make
-        model
-        year
-        color
-        milage
-        price
-        new/used
-    MY CARS
-        single cards similar to view all cars, only to specific user
+Adam Kuemmel
 
-#$*#*$%##_$ICEBOX#$%&$#_$%
-filter options
+https://github.com/AdamKuemmel
 
-autopopulate data from a car api
+https://www.linkedin.com/in/adam-kuemmel-74a3421b6/
