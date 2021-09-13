@@ -1,0 +1,136 @@
+:root {
+  
+  --lightBlue: #46B0C7
+  --darkBlue: #12687A
+  --medBrown: #C78346
+  --lightBrown: #FFB473
+  --darkBrown: #7A491F
+}
+
+body {
+  justify-content: center;
+}
+
+h1 {
+  font-size: 100px;
+  background-color: var(--darkBrown);
+  color: var(--darkBlue);
+  text-align: center;
+}
+
+nav {
+  font-size: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+  transition: color 0.1s;
+  margin-left: 16px;
+}
+
+.gallery-of-vehicles {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: whitesmoke;
+  padding-bottom: 60px;
+}
+
+.card {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-text {
+  color: violet;
+}
+
+.card-body {
+  padding-left: 10px;
+  background-color: red;
+}
+
+.footer {
+  background-color: #586978;
+  color: var(--accentgrey);
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+}
+
+.img {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.row-justify-space-between-md {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 75vh;
+  margin-top: 10px;
+}
+
+.login-card {
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: whitesmoke;
+  color: red;
+  height: 50vh;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn btn-primary {
+  justify-content: center;
+}
+
+.single-page-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.single-page-card {
+  display: flex;
+  width: 100%;
+
+  text-align: center;
+  height: 75vh;
+  margin-top: 10px;
+}
+
+.seller-info {
+  margin-left: 20px;
+}
+
+.car-info {
+  flex-direction: column;
+}

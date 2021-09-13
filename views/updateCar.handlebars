@@ -1,0 +1,113 @@
+
+
+<div class="sellCar-Card">
+    <h2 class="page-title">Update your cars info here!</h2>
+
+    <div>
+        <button id="upload_widget" class="cloudinary-button">Upload Pictures</button>
+        <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+    </div>
+
+    <form class="form updateCar-form">
+        <div class="form-group">
+            <label for="make-postcar">What is the make of your vehicle?</label>
+            <input class="form-input" placeholder="{{updatedCar.car_make}}" type="text" id="make-updatecar" />
+        </div>
+        <div class="form-group">
+            <label for="model-postcar">What is the model of your vehicle?</label>
+            <input class="form-input" placeholder="{{updatedCar.car_model}}" type="text" id="model-updatecar" />
+        </div>
+        <div class="form-group">
+            <label for="year-postcar">What is the year of your vehicle?</label>
+            <input class="form-input" placeholder="{{updatedCar.car_year}}" type="text" id="year-updatecar" />
+        </div>
+        <div class="form-group">
+            <label for="color-postcar">What is the color of your vehicle?</label>
+            <input class="form-input" placeholder="{{updatedCar.car_color}}" type="text" id="color-updatecar" />
+        </div>
+        <div class="form-group">
+            <label for="mileage-postcar">What is the mileage of your vehicle?</label>
+            <input class="form-input" placeholder="{{updatedCar.car_milage}}" type="text" id="mileage-updatecar" />
+        </div>
+        <div class="form-group">
+            <label for="price-postcar">What price would you like to sell the vehicle?</label>
+            <input class="form-input" placeholder="{{updatedCar.car_price}}" type="text" id="price-updatecar" />
+        </div>
+        <div class="form-group">
+            <label>Is your car new?</label>
+            <input class="form-input"  type="checkbox" id="new-updatetcar" />
+        </div>
+        <!-- email, user, password, first name, last name, and phone number -->
+        <div class="form-group">
+            <button class="btn btn-primary" id="updateCars-form" type="submit">Submit your updatted vechile here!</button>
+        </div>
+    </form>
+</div>
+</div>
+
+<script >
+
+    let Img;
+
+    const updateCar = async (event) => {
+            event.preventDefault();
+
+            console.log('Testing if it goes in here')
+
+            const carMake = document.querySelector('#make-updatecar').value.trim();
+            const carModel = document.querySelector('#model-updatecar').value.trim();
+            const carYear = document.querySelector('#year-updatecar').value.trim();
+            const carColor = document.querySelector('#color-updatecar').value.trim();
+            const carMileage = document.querySelector('#mileage-updatecar').value.trim();
+            const carPrice = document.querySelector('#price-updatecar').value.trim();
+            const carNew = document.querySelector('#new-updatecar:checked') ? true : false;
+            const id = {{updatedCar.id}}
+
+            console.log(carMileage + carMake + carModel + carYear + carColor + carPrice + carNew)
+
+            if (carMake && carModel && carYear && carColor && carMileage && carPrice) {
+                const response = await fetch("/api/cars", {
+                    method: "PUT",
+                    body: JSON.stringify({ carMake, carModel, carYear, carColor, carMileage, carPrice, carNew, id, Img }),
+                    headers: { "Content-Type": "application/json" },
+
+
+                });
+
+                if (response.ok) {
+                    document.location.replace('/dashboard')
+                    console.log('You sucessfully submitted you car!')
+                } else {
+                    alert("Failed to submit your car!")
+                }
+
+            }
+
+        }
+
+        document.querySelector(".updateCar-form").addEventListener('submit', updateCar)
+
+        var myWidget = cloudinary.createUploadWidget(
+                {
+                    cloudName: "ddytkmu7p",
+                    uploadPreset: "mlj31vf2",
+                },
+                (error, result) => {
+                    if (error) {
+                        console.log(error);
+                    }
+                    if (!error && result && result.event === "success") {
+                        console.log("Done! Here is the image info:" + result.info.url);
+                        Img = result.info.url;
+                    }
+                }
+            );
+
+            document.getElementById("upload_widget").addEventListener(
+                "click",
+                function () {
+                    myWidget.open();
+                },
+                false
+            );
+</script>

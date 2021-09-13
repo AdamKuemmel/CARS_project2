@@ -35,7 +35,7 @@ User.init(
       },
     },
     username: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       unique: true,
     },
 
@@ -47,7 +47,7 @@ User.init(
       },
     },
     phone_number: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
     },
   },
@@ -78,4 +78,4 @@ User.init(
   }
 );
 
-module.exports = Employee;
+module.exports = User;

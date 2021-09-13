@@ -1,106 +1,50 @@
-# CARS_project2
-
-USER EXPERIENCE
-user will be able to sign up and login
-check status of cars
-post cars
-delete cars
-update car info
-
-REQUIRED PAGES
-home/login page
-view your posts
-view all posts
-Form page
-
-MODELS--what the user input must look like
-
-    car model:
-        id
-        make
-        year
-        color
-        milage
-        price
-        images
-        USED?NEW
-
-    user model:
-        id
-        first
-        last
-        email
-        username
-        password
-        car_id -----stored reference to an id in the cars table
-        phone#
-
-PUBLIC--handles front end styling and front and JS
-
-    login.js:
-        login form handler with event listeners and api fetch(async functions)
-        signup form handler with event listeners post request
-        event listener on corresponding button to direct user to corresponding function
-
-    logout.js
-        logout async function returning user to the home page
-        event listnener on logout button to direct JS to logout function
-
-CONTROLLERS---responsible for handling the routes to the API(POST, GET )
-
-    API FOLDER---this is where we will store the routes to the api
-        user routes
-            create a new user
-            Login
-            Logout
-        car routes
-            post new car
-            Edit a car
-            Delete a car
-            view car
+ReadME
+# Title of Project
+Group Project 2, Side Swipe
 
 
-    homepage-routes
-        GET all cars and display as cards
-        LOGIN route
-            redirects user to the login route declared in the API folder
-
-    index
-        supplies middleware to make requiring routes easier
-
-UTILS DIRECTORY
-middleware for easy use of things like date, time, UUID, password hashing
-
-VIEWS FOLDER
-LAYOUTS
-one main.handlebars folder including head HTML(stylesheets, fonts, JS links, project title)
-includes anyhting that will always be required in HTML file and we insert other handlebars files into this main layout
-PARTIALS
-html detail for a singular car card---multiple cards displayed on one page
-
-    NO LOG HOMEPAGE
-        all cars in Car table displayed
-        when user clicks on view car will prompt them to login or signup
-        if logged in brings them to singCar.handlebars
-
-    YES LOG HOMEPAGE
-          view all cars(homepage)
-          view my cars(car_id reference)
-          view liked cars
+## Description of Project
+This second Group Project was to build both the front and back-end to a website of our choosing. After group deliberations, we decided on a website that we named Side Swipe that simplifies and allows individuals to buy and sell their cars online.
+The owner can upload information as well as photos of their car and post it to our site. Those looking for a car can conversely search for cars to purchase with their desired traits such as price point, make and model of car and color.
+Upon arrival at our site, the user is directed to login on the homepage. They can then navigate to their personal page with persisting data from their searches, or they can continue to scroll through the cards/listings other sellers have posted.
+In order to post a car for sale, an individual utilizes an API by the name of Cloudinary, which is a built-in feature to our front-end design. This API takes the images and information posted by the user and formats it uniformly into our website, making it simple for the average person to participate in the buying and selling process.
+Contact information is posted alongside the vehicle so individuals can contact one another regarding their cars.
+Buying and selling has never been easier for individuals not wanting to involve a third-party.
 
 
+## Screenshot of Finished Project
+“Add at a later time”
 
-    SingleCar MAIN DISPLAY
-        include more detaield description of car
-        multiple pictures
-        will display all details
-        Bid option?
-        message owner?
 
-    LOGIN/LOGOUT handlebar page
-        2 cards to collect login data or signup data
+## Technology Used
+- Node.js
+- Java Script
+- HTML
+- CSS
+- Handlebars
+- Couldinary
+- MySQL
+- Sequelize ORM
+- Heroku
 
-#$*#*$%##_$ICEBOX#$%&$#_$%
-filter options
 
-autopopulate data from a car api
+## Resources Used
+- [Google](https://google.com)
+- [Moment.js](https://momentjs.com)
+- [w3schools](https://w3schools.com)
+- [MDN Web Docs](https://developer.mozilla.org)
+
+
+## Contact Information
+Brock Atwood
+https://github.com/BrockAtwood
+https://www.linkedin.com/in/brock-atwood-55135210/
+Justin Phillips
+https://github.com/Jukphillips
+https://www.linkedin.com/in/justin-phillips-965a39218/
+Stephanie Johansson
+7steph7@gmail.com
+https://www.linkedin.com/in/stephanie-johansson-934096213/
+Adam Kuemmel
+https://github.com/AdamKuemmel
+https://www.linkedin.com/in/adam-kuemmel-74a3421b6/
