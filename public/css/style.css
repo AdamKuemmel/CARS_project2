@@ -32,8 +32,8 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: black;
   color: whitesmoke;
+  padding-bottom: 60px;
 }
 
 .card {
@@ -57,9 +57,10 @@ nav {
   color: var(--accentgrey);
   font-family: "Quicksand", sans-serif;
   display: flex;
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0px;
+
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
