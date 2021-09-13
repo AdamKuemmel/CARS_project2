@@ -8,7 +8,8 @@
     "car_milage": 769587,
     "car_price": 791657.89,
     "new_used": true,
-    "user_id": 1
+    "user_id": 1,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631510750/l7ninxxx1bbpoqujhena.jpg"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
     "car_milage": 154949,
     "car_price": 133885.15,
     "new_used": true,
-    "user_id": 2
+    "user_id": 2,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631510841/vyoejzwa54p6cgsnko08.jpg"
   },
   {
     "id": 3,
@@ -30,7 +32,8 @@
     "car_milage": 783153,
     "car_price": 410397.77,
     "new_used": false,
-    "user_id": 3
+    "user_id": 3,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631510878/medaoveikm7hgwxllysb.jpg"
   },
   {
     "id": 4,
@@ -41,7 +44,8 @@
     "car_milage": 703759,
     "car_price": 974182.81,
     "new_used": true,
-    "user_id": 4
+    "user_id": 4,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631510912/hqlfwvfrksa0cle39z39.jpg"
   },
   {
     "id": 5,
@@ -52,7 +56,8 @@
     "car_milage": 204073,
     "car_price": 182656.49,
     "new_used": false,
-    "user_id": 5
+    "user_id": 5,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631510925/mu5oxga21wmn7dvlzhzh.jpg"
   },
   {
     "id": 6,
@@ -63,7 +68,8 @@
     "car_milage": 378675,
     "car_price": 445340.86,
     "new_used": false,
-    "user_id": 6
+    "user_id": 6,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631510941/ggb4hqqoiacj6bgthytk.jpg"
   },
   {
     "id": 7,
@@ -74,7 +80,8 @@
     "car_milage": 451953,
     "car_price": 487856.1,
     "new_used": false,
-    "user_id": 7
+    "user_id": 7,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631510983/f2v8t3l78tlxg2x4vbjj.jpg"
   },
   {
     "id": 8,
@@ -85,7 +92,8 @@
     "car_milage": 665512,
     "car_price": 102505.41,
     "new_used": false,
-    "user_id": 8
+    "user_id": 8,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631510996/isdepam7uk2nff9hhvx6.jpg"
   },
   {
     "id": 9,
@@ -96,7 +104,8 @@
     "car_milage": 616504,
     "car_price": 696985.73,
     "new_used": true,
-    "user_id": 9
+    "user_id": 9,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511009/qge0qq4rlowkngvj76ez.jpg"
   },
   {
     "id": 10,
@@ -107,7 +116,8 @@
     "car_milage": 347439,
     "car_price": 426510.87,
     "new_used": false,
-    "user_id": 10
+    "user_id": 10,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511025/lx8crwlwb0olyni0qtzf.jpg"
   },
   {
     "id": 11,
@@ -118,7 +128,8 @@
     "car_milage": 852321,
     "car_price": 861041.85,
     "new_used": false,
-    "user_id": 11
+    "user_id": 11,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511038/hlnn1psupfd4ent47fsr.jpg"
   },
   {
     "id": 12,
@@ -129,7 +140,8 @@
     "car_milage": 1800,
     "car_price": 83059.17,
     "new_used": true,
-    "user_id": 12
+    "user_id": 12,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511051/rqm2fj7yvytdy0kybung.jpg"
   },
   {
     "id": 13,
@@ -140,7 +152,8 @@
     "car_milage": 995629,
     "car_price": 861810.79,
     "new_used": true,
-    "user_id": 13
+    "user_id": 13,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511103/dkvvzg2jeyhujscz2cqi.jpg"
   },
   {
     "id": 14,
@@ -151,7 +164,8 @@
     "car_milage": 185981,
     "car_price": 53336.26,
     "new_used": false,
-    "user_id": 14
+    "user_id": 14,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511115/xbmvjvtzwnazxmuidebk.jpg"
   },
   {
     "id": 15,
@@ -162,7 +176,8 @@
     "car_milage": 697647,
     "car_price": 368765.93,
     "new_used": false,
-    "user_id": 15
+    "user_id": 15,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511131/zqhjandtgubc8ta3jk7s.jpg"
   },
   {
     "id": 16,
@@ -173,7 +188,8 @@
     "car_milage": 435228,
     "car_price": 194368.27,
     "new_used": true,
-    "user_id": 16
+    "user_id": 16,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511150/y7vf8motl2jry2n38asb.jpg"
   },
   {
     "id": 17,
@@ -184,7 +200,8 @@
     "car_milage": 753143,
     "car_price": 913310.63,
     "new_used": true,
-    "user_id": 17
+    "user_id": 17,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511170/mfznsgtujegza5mmkg6m.jpg"
   },
   {
     "id": 18,
@@ -195,7 +212,8 @@
     "car_milage": 784988,
     "car_price": 918407.89,
     "new_used": false,
-    "user_id": 18
+    "user_id": 18,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511186/apauzegyzk0ubxddqhqz.jpg"
   },
   {
     "id": 19,
@@ -206,7 +224,8 @@
     "car_milage": 525777,
     "car_price": 991625.64,
     "new_used": false,
-    "user_id": 19
+    "user_id": 19,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511204/v93gratpqp6atr3fcbxt.jpg"
   },
   {
     "id": 20,
@@ -217,7 +236,8 @@
     "car_milage": 215563,
     "car_price": 105389.29,
     "new_used": true,
-    "user_id": 20
+    "user_id": 20,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511220/dghwzuq8nnjqgmydmaum.jpg"
   },
   {
     "id": 21,
@@ -228,7 +248,8 @@
     "car_milage": 696836,
     "car_price": 626842.5,
     "new_used": false,
-    "user_id": 21
+    "user_id": 21,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511235/owoxekp8s2s3obnseh96.jpg"
   },
   {
     "id": 22,
@@ -239,7 +260,8 @@
     "car_milage": 570001,
     "car_price": 899633.63,
     "new_used": false,
-    "user_id": 22
+    "user_id": 22,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511251/htbaijr2gkzwhxseaphf.jpg"
   },
   {
     "id": 23,
@@ -250,7 +272,8 @@
     "car_milage": 251860,
     "car_price": 224761.68,
     "new_used": true,
-    "user_id": 23
+    "user_id": 23,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511266/hkkftxpg3fftyj2bifex.jpg"
   },
   {
     "id": 24,
@@ -261,7 +284,8 @@
     "car_milage": 437758,
     "car_price": 17781.33,
     "new_used": true,
-    "user_id": 24
+    "user_id": 24,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511283/llt8nsvqrlfojfme6gwp.jpg"
   },
   {
     "id": 25,
@@ -272,7 +296,8 @@
     "car_milage": 958398,
     "car_price": 10762.07,
     "new_used": true,
-    "user_id": 25
+    "user_id": 25,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511320/tsmbagh85qin33j4zrrs.jpg"
   },
   {
     "id": 26,
@@ -283,7 +308,8 @@
     "car_milage": 102947,
     "car_price": 240160.21,
     "new_used": false,
-    "user_id": 26
+    "user_id": 26,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511351/yfanbuxefhieztyfxpqr.png"
   },
   {
     "id": 27,
@@ -294,7 +320,8 @@
     "car_milage": 357053,
     "car_price": 57636.73,
     "new_used": false,
-    "user_id": 27
+    "user_id": 27,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511383/neewosrvczlkyx2wxrbt.jpg"
   },
   {
     "id": 28,
@@ -305,7 +332,8 @@
     "car_milage": 689832,
     "car_price": 516277.34,
     "new_used": false,
-    "user_id": 28
+    "user_id": 28,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511398/rjfpg6br4qmxctdxmqth.jpg"
   },
   {
     "id": 29,
@@ -316,7 +344,8 @@
     "car_milage": 4261,
     "car_price": 16744.14,
     "new_used": true,
-    "user_id": 29
+    "user_id": 29,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511416/ruefwg4dfjuxozryfpry.jpg"
   },
   {
     "id": 30,
@@ -327,7 +356,8 @@
     "car_milage": 6166,
     "car_price": 418858.51,
     "new_used": false,
-    "user_id": 30
+    "user_id": 30,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511433/gjiqvencduii4j9l7xtu.jpg"
   },
   {
     "id": 31,
@@ -338,7 +368,8 @@
     "car_milage": 783401,
     "car_price": 932842.84,
     "new_used": true,
-    "user_id": 31
+    "user_id": 31,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511484/y5xftcmfjgu86lqzsggo.jpg"
   },
   {
     "id": 32,
@@ -349,7 +380,8 @@
     "car_milage": 561545,
     "car_price": 854983.63,
     "new_used": false,
-    "user_id": 32
+    "user_id": 32,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511506/b63m66eecvq8c5p39y3o.jpg"
   },
   {
     "id": 33,
@@ -360,7 +392,8 @@
     "car_milage": 839310,
     "car_price": 794479.0,
     "new_used": true,
-    "user_id": 33
+    "user_id": 33,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511526/zvxbosize4buiphub43o.jpg"
   },
   {
     "id": 34,
@@ -371,7 +404,8 @@
     "car_milage": 449872,
     "car_price": 240323.75,
     "new_used": false,
-    "user_id": 34
+    "user_id": 34,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511541/s1qjypxqjzysiqexqkyo.jpg"
   },
   {
     "id": 35,
@@ -382,7 +416,8 @@
     "car_milage": 682684,
     "car_price": 594530.17,
     "new_used": false,
-    "user_id": 35
+    "user_id": 35,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511553/nvn3pxjruw3eu7kqn265.jpg"
   },
   {
     "id": 36,
@@ -393,7 +428,8 @@
     "car_milage": 756013,
     "car_price": 806451.23,
     "new_used": true,
-    "user_id": 36
+    "user_id": 36,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511569/o7cv8kq2sucg8d9v8rzp.jpg"
   },
   {
     "id": 37,
@@ -404,7 +440,8 @@
     "car_milage": 686810,
     "car_price": 198762.74,
     "new_used": false,
-    "user_id": 37
+    "user_id": 37,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511589/rummdww4eldsibqif3tu.jpg"
   },
   {
     "id": 38,
@@ -415,7 +452,8 @@
     "car_milage": 881358,
     "car_price": 286446.07,
     "new_used": false,
-    "user_id": 38
+    "user_id": 38,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511602/mahth4eabnf1bvkh1zmm.jpg"
   },
   {
     "id": 39,
@@ -426,7 +464,8 @@
     "car_milage": 783316,
     "car_price": 126101.84,
     "new_used": true,
-    "user_id": 39
+    "user_id": 39,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511618/pnsqsqkmhitzlshyx70v.jpg"
   },
   {
     "id": 40,
@@ -437,7 +476,8 @@
     "car_milage": 203436,
     "car_price": 83710.28,
     "new_used": false,
-    "user_id": 40
+    "user_id": 40,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511632/ou8eks3ofztf834jfpxl.jpg"
   },
   {
     "id": 41,
@@ -448,7 +488,8 @@
     "car_milage": 602151,
     "car_price": 466501.6,
     "new_used": false,
-    "user_id": 41
+    "user_id": 41,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511682/nk6pad2lbbtbnxzx9jhl.jpg"
   },
   {
     "id": 42,
@@ -459,7 +500,8 @@
     "car_milage": 735957,
     "car_price": 866845.38,
     "new_used": false,
-    "user_id": 42
+    "user_id": 42,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511700/px01tlumzdq3l2rbqos3.jpg"
   },
   {
     "id": 43,
@@ -470,7 +512,8 @@
     "car_milage": 810534,
     "car_price": 53774.93,
     "new_used": true,
-    "user_id": 43
+    "user_id": 43,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511718/n0aqw7mg4rgft2yhm7ka.jpg"
   },
   {
     "id": 44,
@@ -481,7 +524,8 @@
     "car_milage": 957205,
     "car_price": 284096.24,
     "new_used": false,
-    "user_id": 44
+    "user_id": 44,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511749/rgswmgirttgdd0baxfuf.jpg"
   },
   {
     "id": 45,
@@ -492,7 +536,8 @@
     "car_milage": 227430,
     "car_price": 928010.31,
     "new_used": true,
-    "user_id": 45
+    "user_id": 45,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511763/yxdybjomectv1xsg1qtu.jpg"
   },
   {
     "id": 46,
@@ -503,7 +548,8 @@
     "car_milage": 663508,
     "car_price": 413973.03,
     "new_used": true,
-    "user_id": 46
+    "user_id": 46,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511778/cbz4t3eemhx411vssnlg.jpg"
   },
   {
     "id": 47,
@@ -514,7 +560,8 @@
     "car_milage": 915003,
     "car_price": 913180.26,
     "new_used": true,
-    "user_id": 47
+    "user_id": 47,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511790/wzzitvrhuexjfkzxgfqa.jpg"
   },
   {
     "id": 48,
@@ -525,7 +572,8 @@
     "car_milage": 35058,
     "car_price": 362298.65,
     "new_used": true,
-    "user_id": 48
+    "user_id": 48,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511805/rbuygfki8kyexborkgbe.jpg"
   },
   {
     "id": 49,
@@ -536,7 +584,8 @@
     "car_milage": 81503,
     "car_price": 785505.16,
     "new_used": false,
-    "user_id": 49
+    "user_id": 49,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511820/ibudcbmd5sodw9sevykh.jpg"
   },
   {
     "id": 50,
@@ -547,6 +596,7 @@
     "car_milage": 863053,
     "car_price": 214679.92,
     "new_used": false,
-    "user_id": 50
+    "user_id": 50,
+    "img_url": "http://res.cloudinary.com/ddytkmu7p/image/upload/v1631511833/oskupnaqqymlwmgcxe07.jpg"
   }
 ]
