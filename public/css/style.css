@@ -1,3 +1,7 @@
+body {
+  justify-content: center;
+}
+
 h1 {
   font-size: 100px;
   background-color: black;
@@ -36,7 +40,7 @@ nav {
   padding: 5px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .card-text {
@@ -48,19 +52,14 @@ nav {
   background-color: red;
 }
 
-.login-card {
-  margin: 0 0 30px 0;
-  flex: 0 0 75%;
-  max-width: 50%;
-  padding: 10px;
-  border: 5px;
-}
-
 .footer {
   background-color: #586978;
   color: var(--accentgrey);
   font-family: "Quicksand", sans-serif;
   display: flex;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
@@ -71,4 +70,37 @@ nav {
   width: 20px;
   height: 20px;
   border-radius: 5px;
+}
+
+.row-justify-space-between-md {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 75vh;
+  margin-top: 10px;
+}
+
+.login-card {
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-evenly;
+  text-align: center;
+  background-color: whitesmoke;
+  color: red;
+  height: 50vh;
+}
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.btn btn-primary {
+  justify-content: center;
 }
