@@ -16,7 +16,7 @@
 
       const deleteCar{{id}}
       = async () => { 
-     const response = await
+     let response = await
       fetch("/api/cars/" +
       {{id}}, { method: "DELETE" }) if (response.ok) {
       document.location.replace("/dashboard/myCars") } }
