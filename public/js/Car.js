@@ -58,6 +58,9 @@ var myWidget = cloudinary.createUploadWidget(
   }
 );
 
+
+      
+
 document.getElementById("upload_widget").addEventListener(
   "click",
   function () {
@@ -65,5 +68,7 @@ document.getElementById("upload_widget").addEventListener(
   },
   false
 );
+
+
 
 document.querySelector(".postCar-form").addEventListener("submit", postCar);
