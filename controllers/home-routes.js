@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const { Cars, } = require('../models')
+const { Cars } = require('../models/index')
 
 // Get all Cars
 router.get('/', async (req, res) => {
@@ -36,3 +36,4 @@ router.get('/upload', (req,res)=> res.render('uploadPage'))
 
 
 module.exports = router;
+let se;

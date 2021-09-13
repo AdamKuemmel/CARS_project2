@@ -1,6 +1,6 @@
 const express = require("express");
 const sequelize = require("./config/connection");
-const models = require("./models");
+const model = require("./models/index.js")
 const path = require("path")
 const session = require('express-session');
 const exphbs = require('express-handlebars');
@@ -48,3 +48,4 @@ app.use(routes)
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log("Now listening"));
 });
+
