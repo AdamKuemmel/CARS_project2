@@ -16,6 +16,7 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
 
+    console.log(req.session)
         try {
             const singleCarQuery = await Cars.findByPk(req.params.id)
             const user_idQuery = await User.findByPk(singleCarQuery.user_id)
@@ -59,23 +60,36 @@ router.get('/search', async (req, res) => {
 
 
 //Create a car
-router.post('/', async (req, res) => {
+router.post("/", async (req, res) => {
+    
+    console.log('hi')
     try {
-        const carCreateData = await Cars.create({
-            car_make: req.body.carMake,
-            car_model: req.body.carModel,
-            car_year: req.body.carYear,
-            car_color: req.body.carColor,
-            car_milage: req.body.carMileage,
-            car_price: req.body.carPrice,
-            new_used: req.body.carNew,
-            user_id: req.session.username.id
-        })
-        console.log("Sucessfully created a car!")
-        res.status(200).json(carCreateData)
-    } catch (err) {
-        res.status(400).json(err)
-    }
+
+
+        const createCar = await Cars.create({
+        car_make: req.body.carMake,
+        car_model: req.body.carModel,
+        car_year: req.body.carYear,
+        car_color: req.body.carColor,
+        car_milage: req.body.carMileage,
+        car_price: req.body.carPrice,
+        new_used: req.body.carNew,
+        user_id: req.session.username.id,
+        img_url: req.body.Img
+
+    })
+
+
+
+    console.log(createCar)
+    res.status(200).json(createCar)
+
+} catch (err) {
+    console.log(err)
+     res.status(400).json(err)   
+
+}
+
 
 })
 
