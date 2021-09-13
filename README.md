@@ -29,7 +29,11 @@ https://thawing-mesa-73583.herokuapp.com/
 
 ## Screenshot of Finished Project
 
-“Add at a later time”
+![Screen Shot 2021-09-13 at 9 10 28 AM](https://user-images.githubusercontent.com/87385012/133137156-490ff7c4-48ae-4e4d-b056-8273cda937f8.png)
+
+## Google Slides Presentation
+
+https://docs.google.com/presentation/d/1D-Em1Sj2n0k4eLZT-MaTKwdWaAIUusVjKTf-Foq_5ow/edit?usp=sharing
 
 ## Technology Used
 
@@ -42,6 +46,7 @@ https://thawing-mesa-73583.herokuapp.com/
 - MySQL
 - Sequelize ORM
 - Heroku
+- Mockaroo
 
 ## Resources Used
 
