@@ -1,6 +1,5 @@
 const router = require('express').Router()
-const { Cars } = require('../models')
-
+const { Cars, } = require('../models')
 
 // Get all Cars
 router.get('/', async (req, res) => {
@@ -12,8 +11,7 @@ router.get('/', async (req, res) => {
         // Renders this information using handlebars and make sure we are logged in
         // switch to render homepage when frontend is done
         // res.json(carCards)
-        console.log(carCards)
-        res.render('homepage', {carCards})
+        res.render('homepage', {carCards, loggedIn: req.session.loggedIn,})
         
 
     } catch (err) {
@@ -22,6 +20,17 @@ router.get('/', async (req, res) => {
     }
 });
 
+router.get('/dashboard', (req, res) => {
+
+    if(!req.session.loggedIn){
+        res.render('login')
+    } else { res.render('dashboard', { loggedIn: req.session.loggedIn})}
+// Renders dashboard handlebars page
+    
+})
+
 router.get('/upload', (req,res)=> res.render('uploadPage'))
+
+
 
 module.exports = router;

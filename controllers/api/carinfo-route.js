@@ -12,11 +12,31 @@ router.get('/', async (req, res) => {
     } catch (err) {
         res.status(500).json(err)
     }
-})                                                                   
+})
+
+router.get('/:id', async (req, res) => {
+
+        try {
+            const singleCarQuery = await Cars.findByPk(req.params.id)
+            const user_idQuery = await User.findByPk(singleCarQuery.user_id)
+
+            
+            
+            const singleCar = singleCarQuery.get({plain: true});
+            const user_id = user_idQuery.get({plain: true});
+
+            console.log(user_id)
+           
+            res.render('single-car', {singleCar, user_id, LoggedIn: req.session.LoggedIn})
+
+        } catch (err) {
+            res.status(500).json(err)
+        }
+    // }
+})
 
 //Gets cars based on user search
 router.get('/search', async (req, res) => {
-    console.log(req.body)
     try {
         const specialCarsData = await Cars.findAll({
             where: {
@@ -42,16 +62,16 @@ router.get('/search', async (req, res) => {
 router.post('/', async (req, res) => {
     try {
         const carCreateData = await Cars.create({
-            car_make: req.body.car_make,
-            car_model: req.body.car_model,
-            car_year: req.body.car_year,
-            car_color: req.body.car_color,
-            car_milage: req.body.car_milage,
-            car_price: req.body.car_price,
-            new_used: req.body.new_used,
-            user_id: req.body.user_id
+            car_make: req.body.carMake,
+            car_model: req.body.carModel,
+            car_year: req.body.carYear,
+            car_color: req.body.carColor,
+            car_milage: req.body.carMileage,
+            car_price: req.body.carPrice,
+            new_used: req.body.carNew,
+            user_id: req.session.username.id
         })
-
+        console.log("Sucessfully created a car!")
         res.status(200).json(carCreateData)
     } catch (err) {
         res.status(400).json(err)
@@ -59,16 +79,33 @@ router.post('/', async (req, res) => {
 
 })
 
+//get update car
+router.get('/update/:id', async (req, res) => {
+    try {
+        const updateCarQuery = await Cars.findByPk(req.params.id)
+        const updatedCar = updateCarQuery.get({plain: true});
+       
+
+        res.render('updateCar', {updatedCar, LoggedIn: req.session.loggedIn})
+    } catch (err) {
+        console.log(err)
+        res.status(400)
+    }
+
+})
+
 //Update a car
 router.put('/', async (req, res) => {
+    console.log("request was made")
     try {
       const updateCar = await Cars.update({ 
-          car_model: req.body.car_model,
-            car_year: req.body.car_year,
-            car_color: req.body.car_color,
-            car_milage: req.body.car_milage,
-            car_price: req.body.car_price,
-            new_used: req.body.new_used,
+            car_model: req.body.carModel,
+            car_make: req.body.carMake,
+            car_year: req.body.carYear,
+            car_color: req.body.carColor,
+            car_milage: req.body.carMileage,
+            car_price: req.body.carPrice,
+            new_used: req.body.carNew,
         }, 
           {
         where: {
@@ -77,8 +114,11 @@ router.put('/', async (req, res) => {
     })
 
     if(!updateCar){
-        res.status(404).json({message: "no user with this id!"})
+        res.status(404).json({message: "no Car with this id!"})
     }
+
+    console.log(updateCar)
+    res.status(200).json(updateCar)
 
     } catch (err) {
         res.status(400).json(err)
@@ -102,7 +142,8 @@ try {
         return
     }
 
-    res.status(200).json(carData)
+    res.render('dashboard')
+    console.log('sucessfully deleted car!')    
 } catch (err) {
     res.status(500).json(err)
 }
