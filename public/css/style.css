@@ -13,8 +13,8 @@ body {
 
 h1 {
   font-size: 100px;
-  background-color: var(--darkBrown);
-  color: var(--darkBlue);
+  background-color: #7A491F;
+  color:  #FFB473;
   text-align: center;
 }
 
@@ -22,8 +22,8 @@ nav {
   font-size: 30px;
   flex-wrap: wrap;
   text-align: center;
-  background-color: black;
-  color: whitesmoke;
+  background-color: #7A491F;
+  color:  #12687A
 }
 
 .btn-no-style {
@@ -42,7 +42,7 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
   background-color: black;
-  color: whitesmoke;
+  color: #FFB473;
 }
 
 .card {
@@ -50,15 +50,16 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  border-color: #7A491F;
 }
 
 .card-text {
-  color: violet;
+  color: black;
 }
 
 .card-body {
   padding-left: 10px;
-  background-color: red;
+  background-color:  #46B0C7
 }
 
 .footer {
@@ -96,7 +97,7 @@ nav {
   justify-content: space-evenly;
   text-align: center;
   background-color: whitesmoke;
-  color: red;
+  color:  #46B0C7;
   height: 50vh;
 }
 .form-group {
