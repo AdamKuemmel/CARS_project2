@@ -120,6 +120,7 @@ router.put('/', async (req, res) => {
             car_milage: req.body.carMileage,
             car_price: req.body.carPrice,
             new_used: req.body.carNew,
+            img_url: req.body.Img
         }, 
           {
         where: {

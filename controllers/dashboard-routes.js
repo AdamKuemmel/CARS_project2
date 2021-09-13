@@ -5,6 +5,7 @@ const { Cars } = require('../models')
 // Renders logged in users cars
 router.get('/myCars', async (req, res) => {
 
+    
     const myCarData = await Cars.findAll({
         where: {
             user_id: req.session.username.id
