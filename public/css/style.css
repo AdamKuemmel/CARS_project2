@@ -104,3 +104,11 @@ h2 {
 .btn btn-primary {
   justify-content: center;
 }
+
+.single-page-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.single-page-card {
+  justify-content: space-around;
+}
