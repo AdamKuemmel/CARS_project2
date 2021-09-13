@@ -1,11 +1,20 @@
+:root {
+  
+  --lightBlue: #46B0C7
+  --darkBlue: #12687A
+  --medBrown: #C78346
+  --lightBrown: #FFB473
+  --darkBrown: #7A491F
+}
+
 body {
   justify-content: center;
 }
 
 h1 {
   font-size: 100px;
-  background-color: black;
-  color: whitesmoke;
+  background-color: var(--darkBrown);
+  color: var(--darkBlue);
   text-align: center;
 }
 
@@ -32,8 +41,8 @@ nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: black;
   color: whitesmoke;
+  padding-bottom: 60px;
 }
 
 .card {
@@ -57,7 +66,7 @@ nav {
   color: var(--accentgrey);
   font-family: "Quicksand", sans-serif;
   display: flex;
-  position: absolute;
+  position: fixed;
   width: 100%;
   bottom: 0px;
   flex-direction: row;
@@ -107,8 +116,21 @@ h2 {
 
 .single-page-container {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .single-page-card {
-  justify-content: space-around;
+  display: flex;
+  width: 100%;
+
+  text-align: center;
+  height: 75vh;
+  margin-top: 10px;
+}
+
+.seller-info {
+  margin-left: 20px;
+}
+
+.car-info {
+  flex-direction: column;
 }

@@ -84,6 +84,7 @@ try {
     req.session.save(() => {
         req.session.loggedIn = true;
         req.session.username = userObject
+        console.log(req.session.loggedIn)
         console.log("You've sucessfully logged in!")
         res.status(200).json({message: "You are now logged in!"})
     })

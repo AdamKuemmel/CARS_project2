@@ -17,6 +17,9 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
 
     console.log(req.session)
+    if(!req.session.loggedIn){
+        res.render('render')
+    } else {
         try {
             const singleCarQuery = await Cars.findByPk(req.params.id)
             const user_idQuery = await User.findByPk(singleCarQuery.user_id)
@@ -26,15 +29,13 @@ router.get('/:id', async (req, res) => {
             const singleCar = singleCarQuery.get({plain: true});
             const user_id = user_idQuery.get({plain: true});
 
-            console.log(user_id)
-           
-            res.render('single-car', {singleCar, user_id, LoggedIn: req.session.LoggedIn})
+            res.render('single-car', {singleCar, user_id, loggedIn: req.session.loggedIn})
 
         } catch (err) {
             res.status(500).json(err)
         }
     // }
-})
+}})
 
 //Gets cars based on user search
 router.get('/search', async (req, res) => {
@@ -95,18 +96,23 @@ router.post("/", async (req, res) => {
 
 //get update car
 router.get('/update/:id', async (req, res) => {
+
+    console.log(req.session)
+    if(!req.session.loggedIn){
+        res.render('login')
+    } else {
     try {
         const updateCarQuery = await Cars.findByPk(req.params.id)
         const updatedCar = updateCarQuery.get({plain: true});
        
 
-        res.render('updateCar', {updatedCar, LoggedIn: req.session.loggedIn})
+        res.render('updateCar', {updatedCar, loggedIn: req.session.loggedIn})
     } catch (err) {
         console.log(err)
         res.status(400)
     }
 
-})
+}})
 
 //Update a car
 router.put('/', async (req, res) => {
@@ -120,6 +126,7 @@ router.put('/', async (req, res) => {
             car_milage: req.body.carMileage,
             car_price: req.body.carPrice,
             new_used: req.body.carNew,
+            img_url: req.body.Img
         }, 
           {
         where: {
