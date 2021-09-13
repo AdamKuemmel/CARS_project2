@@ -63,7 +63,7 @@ font-family: 'Amatic SC', cursive;
 
 .card-text {
   color: black;
-  font-size: 117%;
+  font-size: 113%;
 }
 
 .card-body {
@@ -83,7 +83,7 @@ font-family: 'Amatic SC', cursive;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  height: 10vh;
+  height: 5vh;
 }
 
 .img {
